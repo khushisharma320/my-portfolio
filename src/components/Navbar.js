@@ -37,7 +37,7 @@ const Navbar = () => {
             name: "Contact",
             icon: <FiPhone/>
         },
-    ]
+    ];
 
     return (
 

@@ -85,7 +85,7 @@ const Skills = () => {
 
     return (
         <div name="Skills">
-            <div className="">
+       
                 <div className="text-white pb-20">
                     <Headings name="Skills" icon={<MdMenuBook />} />
 
@@ -105,9 +105,9 @@ const Skills = () => {
 
                     
                     </div>
-                    <div className="">
+                  
                         <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-evenly">
-                            <div className="w-96">
+                            <div className="w-72 lg:w-96">
                                 {
                                     skillOne.map(({ name, completed }, index) => {
                                         return (
@@ -127,7 +127,7 @@ const Skills = () => {
                                     })
                                 }
                             </div>
-                            <div className="w-96">
+                            <div className="w-72 lg:w-96">
                                 {
                                     skillTwo.map(({ name, completed }, index) => {
                                         return (
@@ -150,8 +150,8 @@ const Skills = () => {
                     </div>
                 </div>
 
-            </div>
-        </div>
+           
+   
     )
 }
 

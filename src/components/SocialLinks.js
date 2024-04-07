@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs"
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
 
@@ -14,7 +14,8 @@ const SocialLinks = () => {
                 </>
             ),
             href: "https://linkedin.com",
-            style: "rounded-tr-md"
+            style: "rounded-tr-md",
+            icon: <FaLinkedin size={30}/>
         },
         {
             id: 2,
@@ -23,7 +24,8 @@ const SocialLinks = () => {
                 GitHub <FaGithub size={30}/>
                 </>
             ),
-            href: "https://github.com/khushisharma320"     
+            href: "https://github.com/khushisharma320",
+            icon:  <FaGithub size={30}/>    
         },
         {
             id: 3,
@@ -32,7 +34,8 @@ const SocialLinks = () => {
                 Mail <HiOutlineMail size={30}/>
                 </>
             ),
-            href: "mailto:erkhushisharma07@gmail.com"
+            href: "mailto:erkhushisharma07@gmail.com",
+            icon: <HiOutlineMail size={30}/>
         },
         {
             id: 4,
@@ -43,23 +46,27 @@ const SocialLinks = () => {
             ),
             href: "/Resume_khushi_sharma.pdf",
             style: "rounded-br-md",
-            download: true
+            download: true,
+            icon: <BsFillPersonLinesFill size={30}/>
         },
     ];
     
     return (
-        <div className="hidden lg:flex flex-col top-[35%] left-0 fixed z-50">
+        <>
+        <div className="absolute z-10 top-80 lg:flex flex-col md:top-[35%] left-0 md:fixed md:z-50">
             <ul>
                 {
                     links.map(({id, name, href, style, download})=>{
                         return (
 
-                            <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 bg-yellow-700 ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-500 " + style }><a href={href} className="flex justify-between items-center w-full text-white" download={download} target="_blank" rel="noreferrer">{name}</a></li>
+                            <li key={id} className={"flex justify-between items-center w-40 h-10 md:h-14 px-4 bg-yellow-700 ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-500 " + style }><a href={href} className="flex justify-between items-center w-full text-white" download={download} target="_blank" rel="noreferrer">{name}</a></li>
                         )
                     })
                 }
             </ul>
         </div>
+      
+        </>
     )
 }
 
