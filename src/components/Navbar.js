@@ -3,6 +3,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { RiHandbagLine } from "react-icons/ri";
+import { GrCertificate } from "react-icons/gr";
 import { GiSkills } from "react-icons/gi";
 import { FiPhone } from "react-icons/fi";
 import { Link } from "react-scroll";
@@ -34,9 +35,15 @@ const Navbar = () => {
         },
         {
             id: 5,
+            name: "Certifications",
+            icon: <GrCertificate/>
+        },
+        {
+            id: 6,
             name: "Contact",
             icon: <FiPhone/>
         },
+       
     ];
 
     return (

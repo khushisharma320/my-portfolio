@@ -53,13 +53,13 @@ const SocialLinks = () => {
     
     return (
         <>
-        <div className="absolute z-10 top-80 lg:flex flex-col md:top-[35%] left-0 md:fixed md:z-50">
+        <div className="absolute z-10 top-96 lg:flex flex-col md:top-[35%] left-0 md:fixed md:z-50">
             <ul>
                 {
                     links.map(({id, name, href, style, download})=>{
                         return (
 
-                            <li key={id} className={"flex justify-between items-center w-40 h-10 md:h-14 px-4 bg-yellow-700 ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-500 " + style }><a href={href} className="flex justify-between items-center w-full text-white" download={download} target="_blank" rel="noreferrer">{name}</a></li>
+                            <li key={id} className={"flex justify-between items-center w-40 h-10 md:h-14 px-4 bg-sky-800 ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-500 " + style }><a href={href} className="flex justify-between items-center w-full text-white" download={download} target="_blank" rel="noreferrer">{name}</a></li>
                         )
                     })
                 }

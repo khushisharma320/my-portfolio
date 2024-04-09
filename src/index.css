@@ -6,14 +6,15 @@
 @tailwind utilities;
 
 
-@layer base{
-  html{
+@layer base {
+  html {
     font-family: 'Open Sans', sans-serif;
   }
-  body{
-background: black;
-background: linear-gradient(0deg, rgb(16, 16, 16) 0%, rgb(38, 38, 37) 100%);
-margin: 0px;
-padding: '0px';
+
+  body {
+    background: black;
+    background: linear-gradient(0deg, rgb(16, 16, 16) 0%, rgb(38, 38, 37) 100%);
+    margin: 0px;
+    padding: 0px;
   }
 }
