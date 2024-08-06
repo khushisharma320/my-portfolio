@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Projects";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 import SocialLinks from "./components/SocialLinks";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,7 +23,7 @@ function App() {
     }, []);
 
   return (
-    <div>
+    <>
       <Navbar/>
       <Home/>
       <SocialLinks/>
@@ -31,7 +32,8 @@ function App() {
       <Skills/>
       <Certifications/>
       <Contact/>
-    </div>
+      <Footer/>
+    </>
 
   );
 }

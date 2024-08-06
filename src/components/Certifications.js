@@ -12,7 +12,7 @@ const Certifications = () => {
         },
         {
             id : 2,
-            image : "images/certificate2.jpg"
+            image : "images/certi2.jpg"
         },
     ];
 

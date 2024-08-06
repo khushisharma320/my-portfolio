@@ -16,32 +16,32 @@ const Navbar = () => {
         {
             id: 1,
             name: "Home",
-            icon: <IoHomeOutline/>
+            icon: <IoHomeOutline color="#946603"/>
         },
         {
             id: 2,
             name: "About",
-            icon: <FaRegUser/>
+            icon: <FaRegUser color="#946603"/>
         },
         {
             id: 3,
             name: "Projects",
-            icon: <RiHandbagLine />
+            icon: <RiHandbagLine color="#946603"/>
         },
         {
             id: 4,
             name: "Skills",
-            icon: <GiSkills/>
+            icon: <GiSkills color="#946603"/>
         },
         {
             id: 5,
             name: "Certifications",
-            icon: <GrCertificate/>
+            icon: <GrCertificate color="#946603"/>
         },
         {
             id: 6,
             name: "Contact",
-            icon: <FiPhone/>
+            icon: <FiPhone color="#946603"/>
         },
        
     ];
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         <div className="flex justify-between items-center w-full h-20 px-16 text-gray-500 bg-neutral-900 fixed z-40 shadow-xl shadow-gray-800">
             <div className="">
-                <h2 className="font-signature font-normal text-2xl text-white">Khushi</h2>
+                <h2 className="font-signature font-normal text-3xl text-white">Khushi Sharma</h2>
             </div>
 
             <ul className="hidden md:flex">
